@@ -1,0 +1,24 @@
+#:kivy 2.1.0
+
+<MyWidget>:
+    orientation: 'horizontal'
+    Button:
+        id: btn
+        text: 'Incrementar'
+        background_color: [1,0,0,1]
+        # self: widget atual, definido um nível de indentação antes/ 
+        # root: widget base da regra definida entre <>/ 
+        # app: refere-se à instância do aplicativo em execução
+        on_press: root.changelb()
+    Label:
+        id: lb
+        text: '0'
+    BoxLayout:
+        id: bxa
+        Button:
+            id: bt_limpar
+            text: 'Limpar'
+            on_press:  lb.text = '0'
+        Label:
+            id:lb_2
+            text: 'Label2'
