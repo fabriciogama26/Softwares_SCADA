@@ -1,5 +1,5 @@
 from servidormodbus import ServidorMODBUS
 
 
-s = ServidorMODBUS('localhost',502)
+s = ServidorMODBUS('127.0.0.1',502)
 s.run()
